@@ -1,0 +1,22 @@
+{
+  "name": "rc-classnames",
+  "description": "Use and manage multi classNames in react and jsx easly",
+  "main": "index.js",
+  "authors": [
+    "Mohammad Rajabifard <mo.rajbi@gmail.com> (@morajabi)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "classNames",
+    "mutli",
+    "classes"
+  ],
+  "homepage": "https://github.com/morajabi/rc-classnames",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

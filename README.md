@@ -6,12 +6,18 @@
 [![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?maxAge=2592000)]()
 
 
-Manage classNames conditionally in React and JSX easily
+Manage classNames conditionally in React and JSX easily in **any format**
 
-Install with npm.
+Install with npm:
 ```
 npm install rc-classnames --save
 ```
+Or with bower:
+```
+bower install rc-classnames
+```
+
+We use 	[SemVer](http://semver.org) for versioning.
 
 ## Why react-classnames
 Do you remember when you wanted a button in JSX to have diffrent states conditionally? You might end up with something like this:
@@ -22,7 +28,7 @@ Or in ES6 syntax:
 ```js
 <button className={`button${isDisabled && ' button--disabled'}${hasRadius || button--no-radius}`} />
 ```
-Oh, It's very hard to read. But with rc-classnames those days are gone! It's intelligent! You can give it classNames in *Any Format* you want and it will generate a neat classname for you. Let's see how can we implement our button with rc-classnames:
+Oh, It's very hard to read. But with rc-classnames those days are gone! It's intelligent! You can give it classNames in **Any Format** you want and it will generate a neat classname for you. Let's see how can we implement our button with rc-classnames:
 ```js
 var c = require('react-classnames');
 
@@ -54,7 +60,7 @@ Or Arrays containing objects:
   ]
 )} />
 ```
-See? Give your classNames in *Any Format* you wish!
+See? Give your classNames in **Any Format** you wish!
 
 ## Have problems?
 I hope you don't have any problem with the library, but if library have problems, fill an issue containing the case with a seperate Repo and me or other friends will answer ASAP. Please double check your code before sumbiting issues.
