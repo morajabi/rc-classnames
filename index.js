@@ -1,46 +1,42 @@
-var forEach     = require('lodash/forEach');
-var flattenDeep = require('lodash/flattenDeep');
-var compact     = require('lodash/compact');
+(function () {
 
-function extractClassFromArray(classList) {
-  return classList.join(' ');
-}
+  var hasOwn = {}.hasOwnProperty;
 
-function extractClassFromObject(classList) {
-  var filteredClassList = [];
-  forEach(classList, function(value, key) { if (value) filteredClassList.push(key); });
-  return filteredClassList.join(' ');
-}
+  function ReactClassNames() {
+    var finalClassList = [];
+    for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+      if (!arg) continue;
 
-function c(classList) {
-  var finalClassList = [];
-  var compactArgs = compact(arguments);
-  forEach(arguments, function(arg) {
+      var typoOfArg = typeof arg;
 
-    if (typeof arg === 'string') {
-      finalClassList.push(arg);
-    } else if (arg.constructor === Array) {
-      // Array
-      var flattedClassList = flattenDeep(arg);
-      forEach(flattedClassList, (c) => {
-        if (typeof c === 'string') {
-          finalClassList.push(c);
-        } else if (classList !== null && typeof classList === 'object') {
-          finalClassList.push(extractClassFromObject(c));
-        }
-      });
-    } else if (arg !== null && typeof arg === 'object') {
-      // Object
-      forEach(arg, function (value, key) {
-        if (value) {
-          finalClassList.push(key);
-        }
-      });
+      if (typoOfArg === 'string' || typoOfArg === 'number') {
+        finalClassList.push(arg);
+      } else if (arg.constructor === Array) {
+        // Array
+        finalClassList.push(ReactClassNames.apply(null, arg));
+      } else if (arg !== null && typoOfArg === 'object') {
+        // Object
+        for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+            finalClassList.push(key);
+					}
+				}
+      }
+
     }
 
-  });
+    return finalClassList.join(' ');
+  }
 
-  return finalClassList.join(' ');
-}
+  if (typeof module !== 'undefined' && module.exports) {
+		module.exports = ReactClassNames;
+	} else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+		define('classnames', [], function () {
+			return ReactClassNames;
+		});
+	} else {
+		window.ReactClassNames = ReactClassNames;
+	}
 
-module.exports = c;
+}());
