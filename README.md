@@ -35,7 +35,7 @@ Even with Arrays and Nested Arrays:
 )} />
 ```
 Or Arrays containing objects:
-```
+```js
 <button className={c(
   'button', 
   [
