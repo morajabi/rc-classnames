@@ -1,7 +1,9 @@
 # rc-classnames
 [![Version](http://img.shields.io/npm/v/rc-classnames.svg)](https://www.npmjs.org/package/rc-classnames)
 [![Build Status](https://travis-ci.org/morajabi/rc-classnames.svg?branch=master)](https://travis-ci.org/morajabi/rc-classnames)
-
+[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?maxAge=2592000?style=flat)]()
+[![Codacy branch grade](https://img.shields.io/codacy/grade/e27821fb6289410b8f58338c7e0bc686/master.svg?maxAge=2592000?style=flat)]()
+[![David](https://img.shields.io/david/strongloop/express.svg?maxAge=2592000)]()
 
 Manage classNames conditionally in React and JSX easily
 
