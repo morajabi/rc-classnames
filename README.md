@@ -62,6 +62,24 @@ Or Arrays containing objects:
 ```
 See? Give your classNames in **Any Format** you wish!
 
+## Usage Without react
+While main purpose of this library is using with React, you **can** use it without react, just call the exported function.
+
+First import `index.js` file with script tag:
+```
+<script src="rc-classnames/index.js"></script>
+```
+`ReactClassNames` is available globally with Pure JS:
+```
+window.getElementById('someId').className = ReactClassNames('hey', { 'foo': true, 'bar': false });
+```
+We support UMD as well.
+
+## TODO
+- Add HoC for custom `classNames` prop in React
+- ...
+If you want a feature or have an idea, fill an issue and tell me what you want.
+
 ## Have problems?
 I hope you don't have any problem with the library, but if library have problems, fill an issue containing the case with a seperate Repo and me or other friends will answer ASAP. Please double check your code before sumbiting issues.
 
