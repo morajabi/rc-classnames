@@ -1,4 +1,4 @@
-# react-classnames
+# rc-classnames
 [![Version](http://img.shields.io/npm/v/react-classnames.svg)](https://www.npmjs.org/package/react-classnames)
 [![Build Status](https://travis-ci.org/morajabi/react-classnames.svg?branch=master)](https://travis-ci.org/morajabi/react-classnames)
 
@@ -7,7 +7,7 @@ Manage classNames conditionally in React and JSX easily
 
 Install with npm.
 ```
-npm install react-classnames --save
+npm install rc-classnames --save
 ```
 
 ## Why react-classnames
