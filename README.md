@@ -2,7 +2,9 @@
 Manage classNames conditionally in React and JSX easily
 
 Install with npm.
+```
 npm install react-classnames --save 
+```
 
 ## Why react-classnames
 Do you remember when you wanted a button in JSX to have diffrent states conditionally? You might endup with something like this:
