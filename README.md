@@ -1,5 +1,5 @@
 # rc-classnames
-[![Version](http://img.shields.io/npm/v/react-classnames.svg)](https://www.npmjs.org/package/react-classnames)
+[![Version](http://img.shields.io/npm/v/rc-classnames.svg)](https://www.npmjs.org/package/rc-classnames)
 [![Build Status](https://travis-ci.org/morajabi/react-classnames.svg?branch=master)](https://travis-ci.org/morajabi/react-classnames)
 
 
