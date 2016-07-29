@@ -1,5 +1,5 @@
 {
-  "name": "react-classnames",
+  "name": "rc-classnames",
   "version": "1.0.0",
   "description": "Use and manage multi classNames in react and jsx easly",
   "main": "index.js",
@@ -13,9 +13,6 @@
   ],
   "author": "Mohammad Rajabifard <mo.rajbi@gmail.com> (@morajabi)",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.14.1"
-  },
   "devDependencies": {
     "expect": "^1.20.2",
     "mocha": "^2.5.3"
