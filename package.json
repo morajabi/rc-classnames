@@ -1,0 +1,16 @@
+{
+  "name": "react-classnames",
+  "version": "1.0.0",
+  "description": "Use and manage multi classNames in react and jsx easly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "classNames",
+    "mutli",
+    "classes"
+  ],
+  "author": "Mohammad Rajabifard <mo.rajbi@gmail.com> (@morajabi)",
+  "license": "MIT"
+}
