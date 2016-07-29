@@ -1,18 +1,21 @@
 # react-classnames
 Manage classNames conditionally in React and JSX easily
 
+Install with npm.
+npm install react-classnames --save 
+
 ## Why react-classnames
 Do you remember when you wanted a button in JSX to have diffrent states conditionally? You might endup with something like this:
-```
+```js
 <button className={'button' + (isDisabled ? ' button--disabled' : '') + (hasRadius ? '' : 'button--no-radius'} />
 ```
 Or in ES6 syntax:
-```
+```js
 <button className={`button${isDisabled && ' button--disabled'}${hasRadius || button--no-radius}`} />
 ```
 Oh, It's very hard to read. But with react-classNames those days are gone! It's intelligent! You can give it classNames in *Any Format* you want and it will generate a neat classname for you. Let's see how can we implement our button with react-classnames:
-```
-import c from 'react-classnames';
+```js
+var c = require('react-classnames');
 
 <button className={c('button', {
   'button--disabled': isDisabled,
@@ -20,7 +23,7 @@ import c from 'react-classnames';
 })} />
 ```
 Even with Arrays and Nested Arrays: 
-```
+```js
 <button className={c(
   ['button', 'header__button', ['button--large']],
   {
