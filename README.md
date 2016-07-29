@@ -3,11 +3,11 @@ Manage classNames conditionally in React and JSX easily
 
 Install with npm.
 ```
-npm install react-classnames --save 
+npm install react-classnames --save
 ```
 
 ## Why react-classnames
-Do you remember when you wanted a button in JSX to have diffrent states conditionally? You might endup with something like this:
+Do you remember when you wanted a button in JSX to have diffrent states conditionally? You might end up with something like this:
 ```js
 <button className={'button' + (isDisabled ? ' button--disabled' : '') + (hasRadius ? '' : 'button--no-radius'} />
 ```
@@ -15,7 +15,7 @@ Or in ES6 syntax:
 ```js
 <button className={`button${isDisabled && ' button--disabled'}${hasRadius || button--no-radius}`} />
 ```
-Oh, It's very hard to read. But with react-classNames those days are gone! It's intelligent! You can give it classNames in *Any Format* you want and it will generate a neat classname for you. Let's see how can we implement our button with react-classnames:
+Oh, It's very hard to read. But with rc-classnames those days are gone! It's intelligent! You can give it classNames in *Any Format* you want and it will generate a neat classname for you. Let's see how can we implement our button with rc-classnames:
 ```js
 var c = require('react-classnames');
 
@@ -24,7 +24,7 @@ var c = require('react-classnames');
   'button--no-radius': !hasRadius
 })} />
 ```
-Even with Arrays and Nested Arrays: 
+Even with Arrays and Nested Arrays:
 ```js
 <button className={c(
   ['button', 'header__button', ['button--large']],
@@ -37,9 +37,9 @@ Even with Arrays and Nested Arrays:
 Or Arrays containing objects:
 ```js
 <button className={c(
-  'button', 
+  'button',
   [
-    'header__button', 
+    'header__button',
     {
       'button--disabled': isDisabled,
       'button--no-radius': !hasRadius
