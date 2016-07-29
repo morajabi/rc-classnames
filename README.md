@@ -1,5 +1,6 @@
 # react-classnames
 [![Build Status](https://travis-ci.org/morajabi/react-classnames.svg?branch=master)](https://travis-ci.org/morajabi/react-classnames)
+<br>
 Manage classNames conditionally in React and JSX easily
 
 Install with npm.
