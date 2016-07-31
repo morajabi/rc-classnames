@@ -1,0 +1,14 @@
+{
+  "extends": "standard",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "module",
+  },
+  "rules": {
+    "semi": 1
+  }
+}
