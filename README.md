@@ -5,9 +5,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/morajabi/rc-classnames.svg?maxAge=2592000?style=flat)]()
 [![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?maxAge=2592000)]()
 
-<p align="left">
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-</p>
+
 
 Manage classNames conditionally in React and JSX easily in **any format**
 
