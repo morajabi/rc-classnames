@@ -18,9 +18,9 @@ Or with bower:
 ```
 bower install rc-classnames
 ```
-You can use CDN as well:
+You can use CDN with minified version as well:
 ```
-<script src="https://npmcdn.com/rc-classnames/index.js"></script>
+<script src="https://npmcdn.com/rc-classnames/index.min.js"></script>
 ```
 You can use with UMD as well.
 
