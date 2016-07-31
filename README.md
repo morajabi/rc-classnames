@@ -16,6 +16,11 @@ Or with bower:
 ```
 bower install rc-classnames
 ```
+You can use CDN as well:
+```
+<script src="https://npmcdn.com/rc-classnames/index.js"></script>
+```
+You can use with UMD as well.
 
 We use 	[SemVer](http://semver.org) for versioning.
 
@@ -30,7 +35,11 @@ Or in ES6 syntax:
 ```
 Oh, It's very hard to read. But with rc-classnames those days are gone! It's intelligent! You can give it classNames in **Any Format** you want and it will generate a neat classname for you. Let's see how can we implement our button with rc-classnames:
 ```js
-var c = require('react-classnames');
+// ES6
+import c from 'rc-classnames';
+
+// CommonJS
+var c = require('rc-classnames');
 
 <button className={c('button', {
   'button--disabled': isDisabled,
@@ -61,6 +70,24 @@ Or Arrays containing objects:
 )} />
 ```
 See? Give your classNames in **Any Format** you wish!
+
+## Usage Without react
+While main purpose of this library is using with React, you **can** use it without react, just call the exported function.
+
+First import `index.js` file with script tag:
+```
+<script src="rc-classnames/index.js"></script>
+```
+`ReactClassNames` is available globally with Pure JS:
+```
+window.getElementById('someId').className = ReactClassNames('hey', { 'foo': true, 'bar': false });
+```
+We support UMD as well.
+
+## TODO
+- Add HoC for custom `classNames` prop in React
+- ...
+If you want a feature or have an idea, fill an issue and tell me what you want.
 
 ## Have problems?
 I hope you don't have any problem with the library, but if library have problems, fill an issue containing the case with a seperate Repo and me or other friends will answer ASAP. Please double check your code before sumbiting issues.
