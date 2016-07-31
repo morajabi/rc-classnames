@@ -1,4 +1,5 @@
 {
+  "version": "1.0.3",
   "name": "rc-classnames",
   "description": "Use and manage multi classNames in react and jsx easly",
   "main": "index.js",
