@@ -82,7 +82,7 @@ First import `index.js` file with script tag:
 ```
 `ReactClassNames` is available globally with Pure JS:
 ```
-window.getElementById('someId').className = ReactClassNames('hey', { 'foo': true, 'bar': false });
+window.getElementById('someId').classList = ReactClassNames('hey', { 'foo': true, 'bar': false });
 ```
 We support UMD as well.
 
