@@ -9,7 +9,9 @@
   "keywords": [
     "classNames",
     "mutli",
-    "classes"
+    "classes",
+    "react",
+    "css-in-js"
   ],
   "author": "Mohammad Rajabifard <mo.rajbi@gmail.com> (@morajabi)",
   "license": "MIT",
