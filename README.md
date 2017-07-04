@@ -3,12 +3,14 @@
 [![Build Status](https://travis-ci.org/morajabi/rc-classnames.svg?branch=master)](https://travis-ci.org/morajabi/rc-classnames)
 [![David](https://img.shields.io/david/morajabi/rc-classnames.svg?maxAge=2592000)]()
 [![GitHub issues](https://img.shields.io/github/issues/morajabi/rc-classnames.svg?maxAge=2592000?style=flat)]()
-[![Maintenance](https://img.shields.io/maintenance/yes/2016.svg?maxAge=2592000)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg?maxAge=2592000)]()
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 
 Manage classNames conditionally in React and JSX easily in **any format**
+
+**There's also another classnames library which I didn't find when I was building this. It's more popular so take a look at it: [JedWatson / classnames](https://github.com/JedWatson/classnames)**
 
 Install with npm:
 ```
